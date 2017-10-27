@@ -134,9 +134,10 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/python-notebook/", "Python notebook demo"),
+        # ("/archive.html", "Archive"),
+        # ("/categories/", "Tags"),
+        # ("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -189,6 +190,7 @@ POSTS = (
 )
 PAGES = (
     ("pages/*.md", "", "page.tmpl"),
+    ("pages/*.ipynb", "", "page.tmpl"),
     ("pages/*.rst", "", "page.tmpl"),
     ("pages/*.txt", "", "page.tmpl"),
     ("pages/*.html", "", "page.tmpl"),

@@ -8,6 +8,10 @@ name = "pypi"
 nikola = "*"
 "ghp-import2" = "*"
 pyyaml = "*"
+"ws4py" = "*"
+watchdog = "*"
+webassets = "*"
+notebook = ">=4.0.0"
 
 
 [dev-packages]
