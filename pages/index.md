@@ -6,26 +6,8 @@ Research impact is a key strategic priority for the University and data sharing 
 
 One of the best ways to make sure that data you share is working for you is to create easy ways for other researchers to explore the datasets. We (Research Software Engineering, the University Library and CICS) are therefore developing a data visualisation showcase site (https://orda.shef.ac.uk/visualisations/) as part of ORDA. 
 
+There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivity.
 
-## STRUCTURE
+### Examples
 
-There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivitty.
-
-### R
-
-- [ggplot2]()
-- plotly
-- [leaflet (interactive mapping)](https://markdunning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html)
-- shiny & html widgets
-
-### Python
-
-- matplotlib
-- plotly
-- bokeh
-- dash
-
-### Vega-lite ###
-
-- GUI
-- Programmatic Vega-lite
+- [Interactive Mapping of Birdlife](https://markduning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html)\[ [Jupyter notebook](/resources/#jupyter), [R](/resources/#R), [leaflet](/resources/#leaflet) ].
