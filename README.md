@@ -2,7 +2,7 @@ This repository holds the source for the University of Sheffield's data visualis
 
 To contribute, raise an issue on GitHub or make a pull request that adds or modifies files in the `pages` directory. You will probably want to install Nikola so that you can test your contribution before submitting it.
 
-If you are comfortable using the commandline and have a working installation of Python 3 and `pip`, here are some quick-start instructions:
+If you are comfortable using the command-line and have a working installation of Python 3 and `pip`, here are some quick-start instructions:
 
 1. Install [Pipenv][]: `pip install pipenv`
     - [Detailed installation instructions for Pipenv][Pipenv install]
