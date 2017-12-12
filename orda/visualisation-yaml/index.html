@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to specify visualisation metadata | Data visualisation hub</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://example.com/orda/visualisation-yaml/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Sheffield">
+<meta property="og:site_name" content="Data visualisation hub">
+<meta property="og:title" content="How to specify visualisation metadata">
+<meta property="og:url" content="https://example.com/orda/visualisation-yaml/">
+<meta property="og:description" content="To include your visualisation in the showcase on ORDA, you will need to upload a simple file describing to ORDA how to access it. This file must be called visualisation.yaml, and the rest of this guid">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-12-12T14:38:43Z">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://example.com/">
+
+                <span id="blog-title">Data visualisation hub</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav"><li>
+<a href="../../resources/">Resources</a>
+
+                
+            </li></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.md" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">How to specify visualisation metadata</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>To include your visualisation in the <a href="https://orda.shef.ac.uk/visualisations/">showcase on ORDA</a>, you will need to upload a simple file describing to ORDA how to access it. This file <em>must</em> be called <code>visualisation.yaml</code>, and the rest of this guide describes the content of that file.</p>
+<p><em>Please note: while currently you need to build a <code>visualisation.yaml</code> file manually, we are developing tools to make this much easier.</em></p>
+<div class="admonition contents">
+<p class="admonition-title">Contents</p>
+<div class="toc">
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#describing-your-visualisation">Describing your visualisation</a></li>
+<li><a href="#optional-information">Optional information</a></li>
+<li><a href="#more-than-one-visualisation">More than one visualisation</a></li>
+<li>
+<a href="#other-tips">Other tips</a><ul>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#yaml">YAML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>You'll need a text editor to create/edit your <code>visualisation.yaml</code> file. If you have written the visualisation yourself in a programming language, the same editor you used for that will allow you to edit a <code>.yaml</code> file. Otherwise:</p>
+<ul>
+<li>Windows: <a href="https://en.wikipedia.org/wiki/Microsoft_Notepad">Microsoft Notepad</a> is included with all Microsoft Windows versions</li>
+<li>MacOS: <a href="https://en.wikipedia.org/wiki/TextEdit">TextEdit</a> is included with all MacOS versions</li>
+<li>Linux: A number of text editors are available, including <a href="https://wiki.gnome.org/Apps/Gedit">gedit</a> (part of GNOME desktop) and <a href="https://kate-editor.org/">Kate</a> (part of KDE desktop) — try searching your menu for "text editor"</li>
+</ul>
+<h3 id="describing-your-visualisation">Describing your visualisation</h3>
+<p>Let's take a look at a whole example, then break it down into its component parts:</p>
+<pre class="code literal-block"><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">visualisations</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://plot.ly/jezcope/5.embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span>
+</pre>
+
+
+<p>This describes an embedded visualisation available at the URL <code>https://plot.ly/jezcope/5.embed</code>. Note that the indentation is important, as ORDA uses this to interpret the structure of the file. It begins with two lines which <em>must</em> be present in every <code>visualisation.yaml</code> file:</p>
+<pre class="code literal-block"><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">visualisations</span><span class="p p-Indicator">:</span>
+</pre>
+
+
+<p>The next line begins the description of a single visualisation, and gives the URL used to access the visualisation:</p>
+<pre class="code literal-block"><span></span>  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://plot.ly/jezcope/5.embed</span>
+</pre>
+
+
+<p>Many online tools (including plot.ly) will let you obtain a special URL for embedding</p>
+<p>The next line specifies the type of visualisation. There are two options for this:</p>
+<ul>
+<li>
+<code>embed</code>: The visualisation will be embedded in its own page on ORDA that also shows important information, such as the title, description, creators and a link to the dataset. This option is strongly recommended.</li>
+<li>
+<code>link</code>: For this type, clicking on the thumbnail in the showcase will cause the visitor's browser to open your visualisation in a new tab or window. This is recommended only for tools, such as Google Sites, which do not permit embedding.</li>
+</ul>
+<pre class="code literal-block"><span></span>    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span>
+</pre>
+
+
+<h3 id="optional-information">Optional information</h3>
+<p>Some information is optional; if it's not specified, the showcase will instead take the information from the ORDA record. This includes the title, description, creators and a link to the source code. This is especially useful when the information for the visualisation is slightly different from the dataset (e.g. different creators). You include this information by adding extra lines in your file, or omit them if you're not using them:</p>
+<pre class="code literal-block"><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">visualisations</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://example.com/visualisation/1.embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">The half-life of thorium</span>
+    <span class="l l-Scalar l-Scalar-Plain">creators</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Marie Skłodowska Curie</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Pierre Curie</span>
+    <span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Experimental measurements of the half-life of thorium samples over time.</span>
+    <span class="l l-Scalar l-Scalar-Plain">thumbnail</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://example.com/visualisation/1.thumbnail.png</span>
+    <span class="l l-Scalar l-Scalar-Plain">source_code</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/example/visualisation</span>
+</pre>
+
+
+<h3 id="more-than-one-visualisation">More than one visualisation</h3>
+<p>It is not possible to upload more than one <code>visualisation.yaml</code> file for a single dataset. If you have more than one visualisation for a single dataset, you can specify all of them in a single file by repeating the <code>- url: …</code> line to start a new entry. It's strongly recommended to include at least the <code>title:</code> optional field to help visitors tell the visualisations apart:</p>
+<pre class="code literal-block"><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">visualisations</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://plot.ly/jezcope/5.embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://plot.ly/jezcope/6.embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span>
+    <span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">An alternative view of the experimental data</span>
+</pre>
+
+
+<h3 id="other-tips">Other tips</h3>
+<h5 id="comments">Comments</h5>
+<p>You can include notes to yourself in the file as comments. Anything from a <code>#</code> to the end of a line will be ignored. For example:</p>
+<pre class="code literal-block"><span></span><span class="nn">---</span>
+<span class="c1"># This whole line will be ignored</span>
+<span class="l l-Scalar l-Scalar-Plain">visualisations</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="s">"https://plot.ly/jezcope/5.embed"</span>
+    <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">embed</span> <span class="c1"># The text after the first # on this line is also ignored</span>
+</pre>
+
+
+<h5 id="yaml">YAML</h5>
+<p>The file format used for describing visualisations is called <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>. It is a general purpose file format for storing information in a format that is both human- and computer-readable and can be used with most programming languages. It's therefore ideal for specifying configuration and metadata to your own software and scripts. Learn more at <a href="http://yaml.org/">http://yaml.org/</a>.</p>
+<hr>
+</div>
+    </div>
+    
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rdm@sheffield.ac.uk">University of Sheffield</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
