@@ -21,12 +21,12 @@ BLOG_AUTHOR = "University of Sheffield"  # (translatable)
 BLOG_TITLE = "Data visualisation hub"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "http://dataviz.shef.ac.uk/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "rdm@sheffield.ac.uk"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_DESCRIPTION = "Help with data visualisation at the University of Sheffield"  # (translatable)
 
 # Nikola is multilingual!
 #
