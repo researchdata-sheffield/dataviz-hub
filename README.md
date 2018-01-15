@@ -1,3 +1,6 @@
+# shef datavis
+## data visualisation hub
+
 [![Build Status](https://travis-ci.org/researchdata-sheffield/dataviz-hub.svg?branch=develop)](https://travis-ci.org/researchdata-sheffield/dataviz-hub)
 
 This repository holds the source for the University of Sheffield's data visualisation hub. The site is generated from the files here using the [Nikola](http://getnikola.com) static site generator.
