@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/researchdata-sheffield/dataviz-hub.svg?branch=develop)](https://travis-ci.org/researchdata-sheffield/dataviz-hub)
+
 This repository holds the source for the University of Sheffield's data visualisation hub. The site is generated from the files here using the [Nikola](http://getnikola.com) static site generator.
 
 To contribute, raise an issue on GitHub or make a pull request that adds or modifies files in the `pages` directory. You will probably want to install Nikola so that you can test your contribution before submitting it.
