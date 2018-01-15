@@ -2,6 +2,10 @@ language: python
 
 sudo: false
 
+branches:
+  except:
+  - gh-pages
+
 python:
     - 3.6
 
@@ -13,8 +17,6 @@ virtualenv:
 install:
     - pip install pipenv
     - pipenv install --system
-
-before_script: cd site/
 
 script:
 - nikola build --no-continue --strict
