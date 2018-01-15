@@ -15,3 +15,21 @@ There are also some [full installation instructions for Nikola][Nikola install].
 [Pipenv]: https://docs.pipenv.org/
 [Pipenv install]: https://docs.pipenv.org/#install-pipenv-today
 [Nikola install]: https://getnikola.com/getting-started.html
+
+
+## Adding a new page:
+### New markdown
+- (on github) create new page by clicking `create new file` in **`pages/`** dir.
+### New rmarkdown
+- if `.rmd`, create in **`rmd/`** and render to the  **`pages/`** dir.
+### New jupyter notebook
+- if an `.ipnb` in the  **`pages/`** dir.
+  - create new `.ipnb`
+  - in the `.ipnb`, go to **`edit`**,  then **`edit notebook metadata`** and add the following snippet to the top level of the **notebook metadata.json**
+    ```
+    "nikola": {
+        "title": "Visualising Networks",
+        "slug": "visualising-networks",
+        "date": "2012-09-15 19:52:05 UTC"
+    }
+    ```
