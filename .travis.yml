@@ -1,0 +1,22 @@
+language: python
+
+sudo: false
+
+branches:
+  except:
+  - gh-pages
+
+python:
+    - 3.6
+
+cache: pip
+
+virtualenv:
+     system_site_packages: false
+
+install:
+    - pip install pipenv
+    - pipenv install --system
+
+script:
+- nikola build --no-continue --strict
