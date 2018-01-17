@@ -1,29 +1,26 @@
 ---
-title: Dash tutorial
+title: Visualising data on the web with Python and Dash
 ---
 
-# Dash tutorial
-### Dash is a user interface library for creating analytical web applications. Those who use Python for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
+[Dash](https://plot.ly/dash/) is a user interface library for creating analytical web applications. Those who use [Python](https://python.org) for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
+
+[Read the full documentation for Dash](https://plot.ly/dash/)
+
+------------------------------------------------------------------------------
+
+**Contents**
+
+[TOC]
+
+## 1. Installation
+
+In order to run Dash app in a Flask server install the following libraries.
+
+Make sure you have installed **Python** (https://www.python.org/downloads/) and **pip** (https://pip.pypa.io/en/stable/installing/)
+{: .alert .alert-block .alert-warning }
 
 
-<div class="alert alert-block alert-info">
-<b>Full documentation:</b>
-https://plot.ly/dash/ <br><br>
-<b>Related technologies:</b><br>
-Pandas: https://pandas.pydata.org/<br>
-Plotly: https://plot.ly/<br>
-React.js: https://reactjs.org/<br>  
-Flask: http://flask.pocoo.org/<br>
-</div>
-
-### 1. Installation
-In order to run Dash app in a Flask server install the following libraries <br>
-<div class="alert alert-block alert-warning">
-Make sure you have installed <b>Python</b> (https://www.python.org/downloads/) and <b>pip</b> (https://pip.pypa.io/en/stable/installing/) 
-</div>
-
-
-```python
+```sh
 pip install dash==0.19.0  # The core dash backend
 pip install dash-renderer==0.11.1  # The dash front-end
 pip install dash-html-components==0.8.0  # HTML components
@@ -31,11 +28,13 @@ pip install dash-core-components==0.15.2  # Supercharged components
 pip install plotly --upgrade  # Latest Plotly graphing library
 ```
 
-### 2. About this example
+## 2. About this example
+
 In this example we are going to build a graph that shows life expectancy in comparison to GDP per capita based in all countries around the World.
 
-### 3. First step
-Besides Dash, we are using __Pandas__ for extract and manipulate data and __Plotly__ to render the output into a Graph. In order to use those libraries all you have to do is use __import__ at the beginning of your code.
+## 3. First step
+
+Besides Dash, we are using __Pandas__ for extract and manipulate data and __Plotly__ to render the output into a Graph. In order to use those libraries you first need to import them:
 
 
 ```python
@@ -46,29 +45,24 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 import pandas as pd
-
-import IPython
 ```
 
-### 4. Download and read a CSV file
-Use Panda's __read_csv__ function in order to download and extract your Dataset. 
-When you read a CSV, you get a kind of object called a DataFrame, which is made up of rows and columns. You get columns out of a DataFrame the same way you get elements out of a dictionary.
+## 4. Download and read a CSV file
+
+Use Panda's `read_csv` function to download and extract your dataset. When you read a CSV, you get a `DataFrame`, which is made up of rows and columns. You access columns in a DataFrame the same way you access elements of a dictionary.
 
 
 ```python
 df = pd.read_csv('https://ndownloader.figsh.com/files/8261349')
 ```
 
-### 5. Preview Dataset
-Function __head()__ gives you a preview of the download Dataset
+## 5. Preview Dataset
 
+Function `head()` gives you a preview of the downloaded dataset.
 
 ```python
 df.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -148,15 +142,16 @@ df.head()
 
 
 
-### 6. Layout
-Dash apps are composed of two parts: __Layout__ and __Interactivity__.  
-The first part is the "layout" of the app and it describes what the application looks like.  
+## 6. Layout
+Dash apps are composed of two parts: __Layout__ and __Interactivity__.
+The first part is the "layout" of the app and it describes what the application looks like.
 
 In this example we are going to create two kinds of filter:
-- Countries: Multiple selection combo box with a list of all countries included on the Dataset
-- Life Expectancy: Slider with a range of ages (min and max)
-![filter.PNG](attachment:filter.PNG)
 
+1. Countries: Multiple selection combo box with a list of all countries included on the Dataset
+2. Life Expectancy: Slider with a range of ages (min and max)
+
+<!-- ![filter.PNG](attachment:filter.PNG) -->
 
 
 ```python
@@ -165,7 +160,7 @@ countries = df['country'].unique()
 app = dash.Dash()
 
 app.layout = html.Div([
-    
+
     html.Div([
         html.Label('Country'),
         dcc.Dropdown(
@@ -198,10 +193,11 @@ app.layout = html.Div([
 ])
 ```
 
-### 7. Interactivity
+## 7. Interactivity
+
 Dash provides a simple reactive decorator for binding your custom data analysis code to your Dash user interface.  
 When an input element changes (e.g. when you select an item in the dropdown or drag the slider), Dash’s decorator provides your Python code with the new value of the input.  
-In this example we are calling __upate_graph__ function each time either a Country is selected or a life expectancy is set.
+In this example we are calling the `update_graph` function each time either a country is selected or a life expectancy range is set.
 
 
 ```python
@@ -246,9 +242,11 @@ def update_graph(expectancy, country):
     }
 ```
 
-### 8. Style
-Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts.<br>Dash apps are built and published in the Web, so the full power of CSS is available. <br>
-Use __app.css.append_css__ in order to set an external CSS file
+## 8. Style
+
+Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts. Dash apps are built and published in the Web, so the full power of CSS is available. 
+
+Use `app.css.append_css` in order to set an external CSS file
 
 
 ```python
@@ -257,20 +255,24 @@ app.css.append_css({
 })
 ```
 
-### 9. Running Application 
-Dash apps are web applications. Dash uses Flask as the web framework. The underlying Flask app is available at app.server, and for the purpose of running the application you should call __run_server__ function in your python code as you can see below.<br>
+## 9. Running Application
 
-   
-Once your app is running it is accessible in a local server; the default address is http://127.0.0.1:8050/
-
+Dash apps are web applications. Dash uses Flask as the web framework. The underlying Flask app is available at app.server, and for the purpose of running the application you should call `run_server` function in your python code as you can see below.
 
 ```python
 if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-<div class="alert alert-block alert-danger">
-As I am running the current example on <b>Heroku</b>, I need the following step in order to show you the ouput embeded on a iframe.
-</div>
+If it all works correctly, your app should be running and accessible in your web browser; the default address is <http://127.0.0.1:8050/>. It should look something like this:
 
-<iframe src="https://dash-tutorial.herokuapp.com/" width="900" height="600" frameBorder="0"></iframe>
+<iframe src="https://dash-tutorial.herokuapp.com/" style="height: 600px; width: 100%;" frameBorder="0"></iframe>
+
+------------------------------------------------------------------------------
+
+**Related technologies:**
+
+ - [Pandas](https://pandas.pydata.org/)
+ - [Plotly](https://plot.ly/)
+ - [React.js](https://reactjs.org/)
+ - [Flask](http://flask.pocoo.org/)
