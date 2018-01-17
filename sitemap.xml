@@ -7,34 +7,58 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://dataviz.shef.ac.uk/</loc>
-  <lastmod>2017-12-12T13:39:00Z</lastmod>
+  <lastmod>2018-01-17T10:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/archive.html</loc>
-  <lastmod>2017-12-12T14:49:00Z</lastmod>
+  <lastmod>2018-01-17T14:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/blog/</loc>
-  <lastmod>2017-11-03T14:42:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/categories/</loc>
-  <lastmod>2017-11-03T14:42:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/galleries/</loc>
-  <lastmod>2017-11-03T14:42:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/listings/</loc>
-  <lastmod>2017-11-03T14:42:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/notebook-test/</loc>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/notebookmd-test/</loc>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/orda/visualisation-yaml/</loc>
-  <lastmod>2017-12-12T13:39:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/resources/</loc>
-  <lastmod>2017-11-03T14:42:00Z</lastmod>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/something-else/</loc>
+  <lastmod>2018-01-15T15:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/tutorials/dash-tutorial-nb/</loc>
+  <lastmod>2018-01-17T10:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/tutorials/dash-tutorial/</loc>
+  <lastmod>2018-01-17T10:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://dataviz.shef.ac.uk/tutorials/dash/</loc>
+  <lastmod>2018-01-17T14:30:00Z</lastmod>
  </url>
 </urlset>
