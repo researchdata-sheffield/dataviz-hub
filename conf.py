@@ -138,6 +138,8 @@ NAVIGATION_LINKS = {
         (
             (
                 ("/tutorials/dash/", "Dash"),
+                ("/orda/link/", "ORDA showcase"),
+                ("/orda/cite/", "Citing data"),
             ),
             "Tutorials",
         ),
