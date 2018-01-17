@@ -1,8 +1,8 @@
 ---
-title: "Stage 5: To link visualisations in ORDA to data"
+title: "Linking visualisations in ORDA to data"
 ---
 
-Prerequisite: In the visualisation application, a visualisation.yaml file is prepared and an image of the visualisation is derived from a screenshot image taken from the visualisation application interface [Stage 4].
+Prerequisite: In the visualisation application, a visualisation.yaml file is prepared and an image of the visualisation is derived from a screenshot image taken from the visualisation application interface.
 
 A. Where data has been uploaded and published in ORDA: 
 1. Open ‘My data’ in your ORDA account. 
