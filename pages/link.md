@@ -4,7 +4,7 @@ title: "Linking visualisations in ORDA to data"
 
 ## Prerequisites 
 
-In the visualisation application, a visualisation.yaml file is prepared and an image of the visualisation is derived from a screenshot image taken from the visualisation application interface.
+In the visualisation application, a **visualisation.yaml** file is prepared and an image of the visualisation is derived from a screenshot image taken from the visualisation application interface.
 
 ## Where data has been uploaded and published in ORDA 
 
