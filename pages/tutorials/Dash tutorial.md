@@ -1,3 +1,6 @@
+---
+title: Dash tutorial
+---
 
 # Dash tutorial
 ### Dash is a user interface library for creating analytical web applications. Those who use Python for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
@@ -270,6 +273,4 @@ if __name__ == '__main__':
 As I am running the current example on <b>Heroku</b>, I need the following step in order to show you the ouput embeded on a iframe.
 </div>
 
-<iframe src=https://dash-tutorial.herokuapp.com/ width=900 height=600 frameBorder=0></iframe>
-
-
+<iframe src="https://dash-tutorial.herokuapp.com/" width="900" height="600" frameBorder="0"></iframe>
