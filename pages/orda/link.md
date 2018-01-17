@@ -13,7 +13,7 @@ In the visualisation application, a **visualisation.yaml** file is prepared and 
 3. In the record editing interface, drag and drop, or browse and select the YAML file and the visualisation image file, to upload them into the item record. 
 4. Add ‘visualisation’ to the keyword metadata field.
 5. Check the ‘Publish’ tickbox and click on ‘Save’.
-6. ORDA administrators will get a notification that an edited record needs approval for publishing. ORDA administrator will check the metadata in the visualisation.yaml file.
+6. ORDA administrators will get a notification that an edited record needs approval for publishing. ORDA administrator will check the metadata in the **visualisation.yaml** file.
 
 ## Where data has not been uploaded to ORDA, but (should be) available from another repository or website
 
@@ -25,4 +25,4 @@ In the visualisation application, a **visualisation.yaml** file is prepared and 
 4. Add a link (preferably a DOI) to the dataset into the ‘references’ field, where the dataset is available from an external repository.
 5. Check the ‘Publish’ tickbox and click on ‘Publish item’, then ‘Yes, publish’.
 6. ORDA administrators will get a notification that a new record needs approval for publishing. ORDA administrator will check the metadata in the visualisation.yaml file.
-7. If the data files are not already available from a repository and issued with a DOI, you should deposit them in ORDA, by upload to the item record. This may be done after the record containing only the visualisation.yaml and image file has been published.
+7. If the data files are not already available from a repository and issued with a DOI, you should deposit them in ORDA, by upload to the item record. This may be done after the record containing only the **visualisation.yaml** and image files has been published.
