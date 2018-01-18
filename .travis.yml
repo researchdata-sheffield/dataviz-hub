@@ -4,19 +4,19 @@ sudo: false
 
 branches:
   except:
-  - gh-pages
+    - gh-pages
 
 python:
-    - 3.6
+  - 3.6
 
 cache: pip
 
 virtualenv:
-     system_site_packages: false
+  system_site_packages: false
 
 install:
-    - pip install pipenv
-    - pipenv install --system
+  - pip install pipenv
+  - pipenv install --system
 
 script:
 - nikola build --no-continue --strict
