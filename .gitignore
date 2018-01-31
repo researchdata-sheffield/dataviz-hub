@@ -1,3 +1,8 @@
 .doit.db
 /cache
 /output
+.Rproj.user
+resources.html
+*test.*
+*.Rproj
+.Rhistory
