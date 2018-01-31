@@ -10,4 +10,4 @@ There many tools for visualisation. We've narrowed it down to some of the most p
 
 ### Examples
 
-- [Interactive Mapping of Birdlife](https://markduning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html)\[ [Jupyter notebook](/resources/#jupyter), [R](/resources/#R), [leaflet](/resources/#leaflet) ].
+- [Interactive Mapping of Birdlife](https://markdunning.github.io/orda-dataviz/anna-birdife_v_bioclim_GIS/demo_workflow.nb.html)\[ [Jupyter notebook](/resources/#jupyter), [R](/resources/#R), [leaflet](/resources/#leaflet) ].
