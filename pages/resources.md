@@ -2,6 +2,23 @@
 title: Resources
 ---
 
+## OxShef
+
+[OxShef: dataviz](https://oxshef.github.io/oxshef/) provides
+
+- advice on how to select the most appropriate charts for your data and how to avoid common mistakes when visualising data. 
+- dedicated websites to how to build visualisations with specific tools
+- dedicated websites for a wide range of different visualisation hosting services
+
+## Dataviz.shef tutorials
+
+Dataviz.shef provides tutorials on
+
+- [Visualising data on the web with Python and Dash](http://dataviz.shef.ac.uk/tutorials/dash/)
+- [Linking visualisations in ORDA to data](http://dataviz.shef.ac.uk/orda/link/)
+- [Citing data for which you have created visualisations](http://dataviz.shef.ac.uk/orda/cite/)
+
+
 ## Web
 
 [Dataviz tools](http://dataviz.tools/) maintain a resource of tools, tutorials and information to assist with data visualisation.
