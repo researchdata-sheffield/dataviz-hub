@@ -33,7 +33,7 @@ We’re also working on developing a community communication framework. We’ve 
 
 ### Resources
 
-There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivity. The majority of our documentation will live on the [**OxShe Charts**](https://oxshef.github.io/oxshef_charts/) site and includes details on chart types and tutorials on producing them in **R** and **python**. These will continue to be added to.
+There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivity. The majority of our documentation will live on the [**OxShef Charts**](https://oxshef.github.io/oxshef_charts/) site and includes details on chart types and tutorials on producing them in **R** and **python**. These will continue to be added to.
 
 <br>
 

@@ -3,7 +3,7 @@ title: Visualising data on the web with Python and Dash
 slug: dash
 ---
 
-[Dash](https://plot.ly/dash/) is a user interface library for creating analytical web applications. Those who use [Python](https://python.org) for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
+[Dash](https://plot.ly/dash/) is a user interface library for creating analytical web applications. Those who use [Python](https://www.python.org) for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
 
 [Read the full documentation for Dash](https://plot.ly/dash/)
 
@@ -265,7 +265,7 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-If it all works correctly, your app should be running and accessible in your web browser; the default address is <http://127.0.0.1:8050/>. It should look something like this:
+If it all works correctly, your app should be running and accessible in your web browser; the default address is `http://127.0.0.1:8050/`. It should look something like this:
 
 <iframe src="https://dash-tutorial.herokuapp.com/" style="height: 600px; width: 100%;" frameBorder="0"></iframe>
 
