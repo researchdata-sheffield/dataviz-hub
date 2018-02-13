@@ -18,7 +18,7 @@ The University Library keeps a number of reference quality books in the collecti
 ## Python Libraries <a name="python"></a>
 
 - [Python Graph Gallery](https://python-graph-gallery.com/)
-- <a name="matplotlib"></a>[Matplotlib](http://matplotlib.org/) is a publication quality 2d plotting library, they provide [resources](http://matplotlib.org/contents.html) and [documentation](http://matplotlib.org/contents.html) 
+- <a name="matplotlib"></a>[Matplotlib](https://matplotlib.org/) is a publication quality 2d plotting library, they provide [resources](https://matplotlib.org/contents.html) and [documentation](https://matplotlib.org/contents.html) 
     - [Nicolas P. Rougier](https://www.labri.fr/perso/nrougier/teaching/matplotlib/) has a helpful introduction to the library. 
     - [effective matplotlib](http://pbpython.com/effective-matplotlib.html) also provides useful commentary.
 - <a name="seaborn"></a>[Seaborn](http://seaborn.pydata.org/index.html) is a plotting library for statistical work, often found alongside scikit learn or pandas.
