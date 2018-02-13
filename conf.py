@@ -134,15 +134,17 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/resources/", "Resources"),
+		("/about/", "About"),
+	    ("/community/", "Community"),
         (
             (
-                ("/tutorials/dash/", "Dash"),
-                ("/orda/link/", "ORDA showcase"),
-                ("/orda/cite/", "Citing data"),
+                ("/oxshef/", "Link to OxShef"),
+                ("/resource/", "Link to local resource"),
+                ("/tutorials/", "Tutorials"),
             ),
-            "Tutorials",
+            "Resources",
         ),
+		("/blog/", "Blog"),
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),
