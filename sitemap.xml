@@ -7,50 +7,50 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://dataviz.shef.ac.uk/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/about/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/archive.html</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/blog/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/categories/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/community/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/orda/cite/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/orda/license/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/orda/link/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/orda/visualisation-yaml/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://dataviz.shef.ac.uk/resources/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <loc>http://dataviz.shef.ac.uk/tutorials/</loc>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://dataviz.shef.ac.uk/tutorials/dash/</loc>
-  <lastmod>2018-02-13T14:51:00Z</lastmod>
+  <lastmod>2018-02-14T10:34:00Z</lastmod>
  </url>
 </urlset>
