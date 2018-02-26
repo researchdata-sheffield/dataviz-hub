@@ -1,0 +1,65 @@
+html {
+  font-size: 17px; }
+
+.header_tuos {
+  background-color: #009C88;
+  font-family: "TUOS Stephenson";
+  font-size: 2.1rem;
+  color: #ffffff;
+  border-bottom: 0px solid #ffffff;
+  padding: 20px 0 20px 0;
+  position: relative; }
+  @media handheld, only screen and (max-width: 767px) {
+    .header_tuos {
+      padding: 10px 0 10px 0; } }
+
+.headcontainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.logo {
+  max-width: 200px;
+  min-width: 150px;
+  flex-basis: 25%; }
+
+.page-title {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  text-align: center; }
+  @media handheld, only screen and (max-width: 767px) {
+    .page-title {
+      font-size: 0.65em;
+      line-height: 1.2; } }
+
+.theme-blue .header_tuos {
+  background-color: #0066B3; }
+.theme-blue .button--pagination:hover, .theme-blue .button--pagination.selected {
+  background-color: #0066B3; }
+.theme-blue .sidebar-nav > li > a {
+  color: #0066B3; }
+  .theme-blue .sidebar-nav > li > a:hover {
+    color: #004980; }
+.theme-blue input[type=radio]:checked + label:before {
+  background-color: #0066B3; }
+.theme-blue input[type="checkbox"]:checked + label:before {
+  background-color: #0066B3; }
+.theme-blue input[type="checkbox"]:checked:disabled + label:before {
+  background-color: #b3c1cc; }
+.theme-blue input[type="radio"]:checked:disabled + label:before {
+  background-color: #b3c1cc; }
+.theme-blue .highlight-box {
+  background-color: #0066B3; }
+.theme-blue th {
+  background-color: #0066B3; }
+
+.navbar-inverse {
+      background-color:#9933ff !important;
+      border:none;
+    }
