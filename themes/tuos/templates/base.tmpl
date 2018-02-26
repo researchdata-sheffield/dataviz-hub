@@ -7,6 +7,7 @@
 {#  Leave this block alone. #}
 {% endblock %}
 {{ template_hooks['extra_head']() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
 <body class="theme-blue">
 
@@ -69,6 +70,26 @@
 <!-- End of Menubar -->
 
 <div class="container" id="content" role="main">
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: `BuPu`,
+        palette: Trianglify.colorbrewer
+    });
+    <!-- document.body.appendChild(pattern.canvas()) -->
+    <!-- // Serialize the SVG object to a String -->
+    var m = new XMLSerializer().serializeToString(pattern.svg());
+
+    <!-- // Perform the base64 encoding of the String -->
+    var k = window.btoa(m);
+
+    <!-- // Query the element to set the background image property -->
+    var element = document.getElementsByTagName('body')[0];
+
+    <!-- // Set the background image property, including the encoding type header -->
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + k + '")';
+</script>
     <div class="body-content">
         <!--Body content-->
         <div class="row">
