@@ -79,16 +79,16 @@
     });
     <!-- document.body.appendChild(pattern.canvas()) -->
     <!-- // Serialize the SVG object to a String -->
-    var m = new XMLSerializer().serializeToString(pattern.svg());
+    var svg_serial = new XMLSerializer().serializeToString(pattern.svg());
 
     <!-- // Perform the base64 encoding of the String -->
-    var k = window.btoa(m);
+    var svg_b64 = window.btoa(svg_serial);
 
     <!-- // Query the element to set the background image property -->
     var element = document.getElementsByTagName('body')[0];
 
     <!-- // Set the background image property, including the encoding type header -->
-    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + k + '")';
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
 </script>
     <div class="body-content">
         <!--Body content-->
