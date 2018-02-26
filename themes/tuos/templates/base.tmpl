@@ -74,7 +74,7 @@
     var pattern = Trianglify({
         width: window.innerWidth,
         height: window.innerHeight,
-        x_colors: ['#ffffff', '#f9fff2','#0066B3'],
+        x_colors: ['#ffffff', '#f9fff2','#0082e6'],
         palette: Trianglify.colorbrewer
     });
     <!-- document.body.appendChild(pattern.canvas()) -->
@@ -89,6 +89,8 @@
 
     <!-- // Set the background image property, including the encoding type header -->
     element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
+    element.style.backgroundSize="cover";
+    element.style.backgroundRepeat="no-repeat"
 </script>
     <div class="body-content">
         <!--Body content-->
