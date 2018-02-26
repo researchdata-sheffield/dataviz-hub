@@ -134,17 +134,17 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-		("/about/", "About"),
-	    ("/community/", "Community"),
+        ("/about/", "About"),
+        ("/community/", "Community"),
         (
             (
-                ("/oxshef/", "Link to OxShef"),
-                ("/resource/", "Link to local resource"),
-                ("/tutorials/", "Tutorials"),
+                # ("/resource/", "Link to local resource"),
+                ("/tutorials/", "Tutorials & links"),
+                ("https://oxshef.github.io/oxshef/", "OxShef: DataViz 🔗"),
             ),
             "Resources",
         ),
-		("/blog/", "Blog"),
+        ("/blog/", "Blog"),
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),
@@ -1217,7 +1217,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # <input type="text" name="q" class="form-control" placeholder="Search">
 # </div>
 # <button type="submit" class="btn btn-primary">
-# 	<span class="glyphicon glyphicon-search"></span>
+#     <span class="glyphicon glyphicon-search"></span>
 # </button>
 # <input type="hidden" name="sitesearch" value="%s">
 # </form>
