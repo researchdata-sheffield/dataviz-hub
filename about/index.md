@@ -2,7 +2,7 @@
 title: About
 ---
 
-This community website exists to provide research staff and students at the [University of Sheffield][TUoS] with information and inspiration about the visual presentation of data.
+> This community website exists to provide research staff and students at the [University of Sheffield][TUoS] with information and inspiration about the visual presentation of data.
 
 [TUoS]: https://sheffield.ac.uk 
 
@@ -15,13 +15,17 @@ This community website exists to provide research staff and students at the [Uni
 
 ## Partners
 
-The website is a joint initiative between:
+**dataviz.shef** is a joint initiative between:
 
 - [The University Library][Library]
 - [Corporate Information and Computing Services (CICS)][CICS]
 - [Research Software Engineering (RSE)][RSE]
 
-We also share ideas and resources with the University of Oxford under the [OxShef: DataVis initiative][OxShef].
+<br>
+
+### OxShef
+
+We also share ideas and resources with the [**University of Oxford Interactive Data Network**](https://idn.it.ox.ac.uk/) under the [OxShef][OxShef] initiative.
 
 [Library]: https://sheffield.ac.uk/library
 [CICS]: https://sheffield.ac.uk/cics

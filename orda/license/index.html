@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Publishing a data visualisation from licensed data | Data visualisation hub</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
@@ -18,14 +22,22 @@
 <meta property="og:description" content="If you wish to create a data visualisation for 3rd party data, you must determine whether this may be done by consulting the license. 
 The data license, granted by the IPR holder, will indicate how th">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-02-14T10:33:32Z">
+<meta property="article:published_time" content="2018-02-26T20:33:25Z">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
-<body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+<body class="theme-blue">
+
+<!-- header -->
+<header class="header_tuos"><div class="headcontainer">
+        <div class="logo"><a href="../../"><img src="https://sheffield.ac.uk/branding/webapps/0.7.0/assets/logo.svg" alt="The University of Sheffield." class="respImg"></a></div>
+        <div class="page-title alignleft">
+            dataviz.shef
+        </div>
+    </div>
+</header><!-- /.header --><a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-default navbar-static-top"><div class="container">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -36,7 +48,6 @@ The data license, granted by the IPR holder, will indicate how th">
             </button>
             <a class="navbar-brand" href="http://dataviz.shef.ac.uk/">
 
-                <span id="blog-title">Data visualisation hub</span>
             </a>
         </div>
 <!-- /.navbar-header -->
@@ -69,7 +80,6 @@ The data license, granted by the IPR holder, will indicate how th">
 <li>
     <a href="index.md" id="sourcelink">Source</a>
     </li>
-
                 
             </ul>
 </div>
@@ -77,15 +87,32 @@ The data license, granted by the IPR holder, will indicate how th">
     </div>
 <!-- /.container -->
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
-    <div class="body-content">
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ['#ffffff', '#f9fff2','#0066B3'],
+        palette: Trianglify.colorbrewer
+    });
+    <!-- document.body.appendChild(pattern.canvas()) -->
+    <!-- // Serialize the SVG object to a String -->
+    var svg_serial = new XMLSerializer().serializeToString(pattern.svg());
+
+    <!-- // Perform the base64 encoding of the String -->
+    var svg_b64 = window.btoa(svg_serial);
+
+    <!-- // Query the element to set the background image property -->
+    var element = document.getElementsByTagName('body')[0];
+
+    <!-- // Set the background image property, including the encoding type header -->
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
+</script><div class="body-content">
         <!--Body content-->
         <div class="row">
-            
             
 <article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Publishing a data visualisation from licensed data</a></h1>
 
         
-
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <p>If you wish to create a data visualisation for 3rd party data, you must determine whether this may be done by consulting the license. 
@@ -96,7 +123,6 @@ data they house.</p>
 </div>
     </div>
     
-
 </article>
 </div>
         <!--End of body content-->
@@ -107,7 +133,6 @@ data they house.</p>
         </footer>
 </div>
 </div>
-
 
             <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");

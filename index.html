@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data visualisation hub</title>
+<title>Data Visualisation Hub | Data visualisation hub</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
@@ -13,20 +17,30 @@
 <link rel="canonical" href="http://dataviz.shef.ac.uk/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><meta name="author" content="University of Sheffield">
 <meta property="og:site_name" content="Data visualisation hub">
-<meta property="og:title" content="Data visualisation hub">
+<meta property="og:title" content="Data Visualisation Hub">
 <meta property="og:url" content="http://dataviz.shef.ac.uk/">
-<meta property="og:description" content="Welcome to shef dataviz hub!
-Promoting and build community around data visualisation at TUoS
-Visualisation has always been at the core of extracting understanding from data and analyses, put powerful ">
+<meta property="og:description" content="Welcome to the Hub!
+Promoting and building community around data visualisation at the University of Sheffield
+
+
+Visualisation has always been at the core of extracting understanding from data, but pow">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-02-14T10:33:32Z">
+<meta property="article:published_time" content="2018-02-26T20:33:25Z">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
-<body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+<body class="theme-blue">
+
+<!-- header -->
+<header class="header_tuos"><div class="headcontainer">
+        <div class="logo"><a href="."><img src="https://sheffield.ac.uk/branding/webapps/0.7.0/assets/logo.svg" alt="The University of Sheffield." class="respImg"></a></div>
+        <div class="page-title alignleft">
+            dataviz.shef
+        </div>
+    </div>
+</header><!-- /.header --><a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-default navbar-static-top"><div class="container">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -37,7 +51,6 @@ Visualisation has always been at the core of extracting understanding from data 
             </button>
             <a class="navbar-brand" href="http://dataviz.shef.ac.uk/">
 
-                <span id="blog-title">Data visualisation hub</span>
             </a>
         </div>
 <!-- /.navbar-header -->
@@ -70,7 +83,6 @@ Visualisation has always been at the core of extracting understanding from data 
 <li>
     <a href="index.md" id="sourcelink">Source</a>
     </li>
-
                 
             </ul>
 </div>
@@ -78,22 +90,44 @@ Visualisation has always been at the core of extracting understanding from data 
     </div>
 <!-- /.container -->
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
-    <div class="body-content">
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ['#ffffff', '#f9fff2','#0066B3'],
+        palette: Trianglify.colorbrewer
+    });
+    <!-- document.body.appendChild(pattern.canvas()) -->
+    <!-- // Serialize the SVG object to a String -->
+    var svg_serial = new XMLSerializer().serializeToString(pattern.svg());
+
+    <!-- // Perform the base64 encoding of the String -->
+    var svg_b64 = window.btoa(svg_serial);
+
+    <!-- // Query the element to set the background image property -->
+    var element = document.getElementsByTagName('body')[0];
+
+    <!-- // Set the background image property, including the encoding type header -->
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
+</script><div class="body-content">
         <!--Body content-->
         <div class="row">
             
-            
-<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Data visualisation hub</a></h1>
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Data Visualisation Hub</a></h1>
 
         
-
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <p><br></p>
-<h3 id="welcome-to-shef-dataviz-hub">Welcome to shef dataviz hub!</h3>
-<h4 id="promoting-and-build-community-around-data-visualisation-at-tuos">Promoting and build community around data visualisation at TUoS</h4>
-<p>Visualisation has always been at the core of extracting understanding from data and analyses, put powerful modern, open source, interactive and web-based data visualisation tools have revolutionised the potential for research data impact. </p>
-<p>To help our researchers make the most of their data and take advantage of such tools, we (Research Software Engineering, the University Library and CICS) have been working on a multi-pronged initiative to provide tools, training and build a community around interactive data visualisation at TUoS.</p>
+<h3 id="welcome-to-the-hub">Welcome to the Hub!</h3>
+<h4 id="promoting-and-building-community-around-data-visualisation-at-the-university-of-sheffield">Promoting and building community around data visualisation at the University of Sheffield</h4>
+<p><br></p>
+<blockquote>
+<p>Visualisation has always been at the core of extracting understanding from data, but powerful, modern, open source, interactive and web-based visualisation tools have revolutionised the potential for research data impact. </p>
+</blockquote>
+<p><br></p>
+<h4 id="datavizshef">dataviz.shef</h4>
+<p>To help our researchers make the most of their data and take advantage of such tools, we (<strong>Research Software Engineering</strong>, the <strong>University Library</strong> and <strong>CICS</strong>) have been working on <strong>dataviz.shef</strong>, a multi-pronged initiative to provide tools, training and build a community around interactive data visualisation at TUoS.</p>
 <p><br></p>
 <h4 id="orda-data-visualisation-showcase">ORDA data visualisation showcase</h4>
 <p>In 2017, ORDA (Online Research Data) was launched, a free platform for all University of Sheffield research staff and students to share their datasets, code, presentations, posters, grey literature and other non-traditional research outputs. As part of ORDA, we've developed a <a href="https://orda.shef.ac.uk/visualisations/"><strong>data visualisation showcase site</strong></a> where researchers are able to host interactive data visualisations and also link them to reposited data in ORDA. </p>
@@ -102,18 +136,17 @@ Visualisation has always been at the core of extracting understanding from data 
 <p>We’ll be hosting a <strong>variety of events</strong> including <strong>talks &amp; symposia, workshops, vis-coding clubs and data visualisation hackathons!</strong>. You'll be able to find out more when we formally launch the initiative at our inaugural <strong>shef dataviz hub forum event</strong>...coming to the Diamond Siemens MindSphere soon, watch this space!</p>
 <h5 id="oxshef-dataviz">OxShef dataviz</h5>
 <p>We’re collaborating with the <a href="https://idn.it.ox.ac.uk/"><strong>Interactive Data Network</strong></a> at the <strong>University of Oxford</strong> as <a href="https://oxshef.github.io/oxshef/"><strong>OxShef dataviz</strong></a> and will be co-organising events and co-developing open CC-By resources. More details to follow soon. Look out for a blogpost on this but for now, you can follow the initiative on <a href="https://twitter.com/oxshef_dataviz">twitter</a></p>
-<p>We’re also working on developing a community communication framework. We’ve started with a <strong>TUoS google group</strong> which can be joined <a href="https://groups.google.com/a/sheffield.ac.uk/forum/?hl=en#!forum/shef_dataviz-group">here</a> through a TUoS google account. But are working on expanding and diversifying communication channels. </p>
+<p>We’re also working on developing a community communication framework. We’ve started with a <strong>TUoS google group</strong> which can be joined <a href="https://groups.google.com/a/sheffield.ac.uk/forum/?hl=en#!forum/shef_dataviz-group">here</a> through a TUoS google account. But we are working on expanding and diversifying communication channels and have now added a slack channel for more informal communication and chat. Join <a href="https://join.slack.com/t/shef-dataviz/signup">here</a>.</p>
 <p><br></p>
 <h4 id="resources">Resources</h4>
 <p>There many tools for visualisation. We've narrowed it down to some of the most popular technologies that interact well with research workflows, are flexible, and allow introducing interactivity. The majority of our documentation will live on the <a href="https://oxshef.github.io/oxshef_charts/"><strong>OxShef Charts</strong></a> site and includes details on chart types and tutorials on producing them in <strong>R</strong> and <strong>python</strong>. These will continue to be added to.</p>
 <p><br></p>
 <h4 id="contribute">Contribute</h4>
-<p>From ideas to content for the ORDA showcase, our blog or datavis documentation, contributions are open to all. For the moment just get in touch with us at <strong>??@shef.ac.uk</strong></p>
+<p>From ideas to content for the ORDA showcase, our blog or datavis documentation, contributions are open to all. For the moment just get in touch with us through the <a href="https://groups.google.com/a/sheffield.ac.uk/forum/?hl=en#!forum/shef_dataviz-group">google group</a> or <a href="https://join.slack.com/t/shef-dataviz/signup">slack team</a>.</p>
 <p><br></p>
 </div>
     </div>
     
-
 </article>
 </div>
         <!--End of body content-->
@@ -124,7 +157,6 @@ Visualisation has always been at the core of extracting understanding from data 
         </footer>
 </div>
 </div>
-
 
             <script src="assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");

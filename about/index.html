@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About | Data visualisation hub</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
@@ -16,17 +20,26 @@
 <meta property="og:title" content="About">
 <meta property="og:url" content="http://dataviz.shef.ac.uk/about/">
 <meta property="og:description" content="This community website exists to provide research staff and students at the University of Sheffield with information and inspiration about the visual presentation of data.
+
 ORDA
-ORDA (Online Research D">
+ORDA (Online Research ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-02-14T10:33:32Z">
+<meta property="article:published_time" content="2018-02-26T20:33:25Z">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
-<body>
-<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+<body class="theme-blue">
+
+<!-- header -->
+<header class="header_tuos"><div class="headcontainer">
+        <div class="logo"><a href="../"><img src="https://sheffield.ac.uk/branding/webapps/0.7.0/assets/logo.svg" alt="The University of Sheffield." class="respImg"></a></div>
+        <div class="page-title alignleft">
+            dataviz.shef
+        </div>
+    </div>
+</header><!-- /.header --><a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-default navbar-static-top"><div class="container">
 <!-- This keeps the margins nice -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -37,7 +50,6 @@ ORDA (Online Research D">
             </button>
             <a class="navbar-brand" href="http://dataviz.shef.ac.uk/">
 
-                <span id="blog-title">Data visualisation hub</span>
             </a>
         </div>
 <!-- /.navbar-header -->
@@ -70,7 +82,6 @@ ORDA (Online Research D">
 <li>
     <a href="index.md" id="sourcelink">Source</a>
     </li>
-
                 
             </ul>
 </div>
@@ -78,32 +89,52 @@ ORDA (Online Research D">
     </div>
 <!-- /.container -->
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
-    <div class="body-content">
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight,
+        x_colors: ['#ffffff', '#f9fff2','#0066B3'],
+        palette: Trianglify.colorbrewer
+    });
+    <!-- document.body.appendChild(pattern.canvas()) -->
+    <!-- // Serialize the SVG object to a String -->
+    var svg_serial = new XMLSerializer().serializeToString(pattern.svg());
+
+    <!-- // Perform the base64 encoding of the String -->
+    var svg_b64 = window.btoa(svg_serial);
+
+    <!-- // Query the element to set the background image property -->
+    var element = document.getElementsByTagName('body')[0];
+
+    <!-- // Set the background image property, including the encoding type header -->
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
+</script><div class="body-content">
         <!--Body content-->
         <div class="row">
-            
             
 <article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">About</a></h1>
 
         
-
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
+<blockquote>
 <p>This community website exists to provide research staff and students at the <a href="https://sheffield.ac.uk">University of Sheffield</a> with information and inspiration about the visual presentation of data.</p>
+</blockquote>
 <h3 id="orda">ORDA</h3>
 <p><a href="https://orda.shef.ac.uk/">ORDA (Online Research Data)</a> is the University of Sheffield's hub for sharing data, code, and other non-traditional research artefacts. ORDA includes a <a href="https://orda.shef.ac.uk/visualisations/">showcase of visual representations of data</a> built by staff and students at the University of Sheffield</p>
 <h3 id="partners">Partners</h3>
-<p>The website is a joint initiative between:</p>
+<p><strong>dataviz.shef</strong> is a joint initiative between:</p>
 <ul>
 <li><a href="https://sheffield.ac.uk/library">The University Library</a></li>
 <li><a href="https://sheffield.ac.uk/cics">Corporate Information and Computing Services (CICS)</a></li>
 <li><a href="http://rse.shef.ac.uk/">Research Software Engineering (RSE)</a></li>
 </ul>
-<p>We also share ideas and resources with the University of Oxford under the <a href="http://oxshef.github.io/oxshef/">OxShef: DataVis initiative</a>.</p>
+<p><br></p>
+<h4 id="oxshef">OxShef</h4>
+<p>We also share ideas and resources with the <a href="https://idn.it.ox.ac.uk/"><strong>University of Oxford Interactive Data Network</strong></a> under the <a href="http://oxshef.github.io/oxshef/">OxShef</a> initiative.</p>
 </div>
     </div>
     
-
 </article>
 </div>
         <!--End of body content-->
@@ -114,7 +145,6 @@ ORDA (Online Research D">
         </footer>
 </div>
 </div>
-
 
             <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
