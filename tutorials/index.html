@@ -25,7 +25,7 @@ OxShef: dataviz provides
 advice on how to select the most appropriate charts for your data and how to avoid common mistakes when visualising data. 
 dedicated websites to how to build visualisa">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-02-26T20:33:25Z">
+<meta property="article:published_time" content="2018-02-26T22:00:22Z">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
 <body class="theme-blue">
@@ -94,7 +94,7 @@ dedicated websites to how to build visualisa">
     var pattern = Trianglify({
         width: window.innerWidth,
         height: window.innerHeight,
-        x_colors: ['#ffffff', '#f9fff2','#0066B3'],
+        x_colors: ['#ffffff', '#f9fff2','#0082e6'],
         palette: Trianglify.colorbrewer
     });
     <!-- document.body.appendChild(pattern.canvas()) -->
@@ -109,6 +109,8 @@ dedicated websites to how to build visualisa">
 
     <!-- // Set the background image property, including the encoding type header -->
     element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + svg_b64 + '")';
+    element.style.backgroundSize="cover";
+    element.style.backgroundRepeat="no-repeat"
 </script><div class="body-content">
         <!--Body content-->
         <div class="row">
