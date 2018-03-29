@@ -28,7 +28,12 @@ In 2017, ORDA (Online Research Data) was launched, a free platform for all Unive
 
 ### Community
  
-We’ll be hosting a **variety of events** including **talks & symposia, workshops, vis-coding clubs and data visualisation hackathons!**. You'll be able to find out more when we formally launch the initiative at our inaugural **shef dataviz hub forum event**...coming to the Diamond Siemens MindSphere soon, watch this space!
+We’ll be hosting a **variety of events** including **talks & symposia, workshops, vis-coding clubs and data visualisation hackathons!**. 
+
+You'll be able to find out more when we formally launch the initiative on **April 25th 2018, 12-2pm** at our inaugural **Data Visualisation Hub launch event** at the **Siemens MindSphere**.
+
+
+<br>
 
 #### OxShef dataviz
 
