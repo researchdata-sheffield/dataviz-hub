@@ -68,6 +68,19 @@ The `slug` refers to the end of the URL and it will need to be unique.
         "date": "2012-09-15 19:52:05 UTC"
     }
     ```
+
+## Create a new blog post.
+
+Use:
+
+```bash
+nikola new_post
+``` 
+to create a new `rst` blog post 
+
+
+***
+
 ## Testing the build
 
 You can build and test your post on your own machine using:
