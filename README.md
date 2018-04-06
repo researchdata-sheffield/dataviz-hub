@@ -71,12 +71,20 @@ The `slug` refers to the end of the URL and it will need to be unique.
 
 ## Create a new blog post.
 
-Use:
+### Create a new `rst` blog post 
 
 ```bash
 nikola new_post
 ``` 
-to create a new `rst` blog post 
+
+
+## Create a new blog post.
+
+### Create a new `rst` blog post 
+
+```bash
+nikola new_post -f markdown
+``` 
 
 
 ***
