@@ -26,5 +26,9 @@ The event is scheduled for **lunchtime (12-2pm)**, will begin with **3-4 talks**
 #### We hope you will be able to join us!
 
 
+<br>
+
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.4832240343093874%2C53.38064697438165%2C-1.48091197013855%2C53.38271083016845&amp;layer=mapnik&amp;marker=53.381678914779464%2C-1.4820680022239685" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=53.38168&amp;mlon=-1.48207#map=18/53.38168/-1.48207&amp;layers=N">View Larger Map</a></small>
 
+#### **Siemens MindSphere Lounge**
+##### **The Diamond, 32 Leavygreave Road, Sheffield, S3 7RD**
