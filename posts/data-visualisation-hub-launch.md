@@ -16,7 +16,15 @@ The event is scheduled for **lunchtime (12-2pm)**, will begin with **3-4 talks**
 
 <br>
 
-<div class="alert alert-warning"><strong>We are still welcoming lightning talks</strong> so, If you are interested in giving one, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScoz9P1iJzCwZTv-AxhSirfJ0n39Fpj6Ck-3mpxLfDhzH04Bg/viewform">short form</a> with your details. For any questions on the event, feel free to contact Anna Krystalli (a.krystalli-at-sheffield.ac.uk).</div>
+<div class="alert alert-warning"><strong>We are still welcoming lightning talks</strong> so, If you are interested in giving one, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScoz9P1iJzCwZTv-AxhSirfJ0n39Fpj6Ck-3mpxLfDhzH04Bg/viewform">short form</a> with your details. <br><br> The talk can be up to 5 mins and we’re looking for a wide range of perspectives, from researchers to students and from beginners experimenting with data visualisation to experienced creators. 
+
+<br><br>
+
+Thematic talks on any aspect of data visualisation are welcome, as are showcases of data visualisations as impactful research outputs. Above all, we’re looking for excitement and enthusiasm about storytelling with data. 
+
+<br><br>
+
+For any questions on the event, feel free to contact Anna Krystalli (a.krystalli-at-sheffield.ac.uk).</div>
 
 <br>
 
