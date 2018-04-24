@@ -1,0 +1,108 @@
+---
+title: "Event Schedule"
+date: "4/24/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets)
+library(tidyverse)
+responses <- gs_url("https://docs.google.com/spreadsheets/d/1rQ1gKJUUd8c01XnTW8h2BEw2zJeMTt7nKUneG94Gotc/edit#gid=1315135582", visibility = "private") %>% gs_read()
+
+
+```
+
+
+
+## Data Visualisation Hub Launch
+
+***
+
+### Introduction
+
+#### **Welcome**
+##### ***Jez Cope***, *University of Sheffield, Library*
+
+#### **Introduction to the initiative**
+##### ***Anne Horn***, *University of Sheffield, Director of Library Services & University Librarian*
+
+<br>
+
+
+### Main Talks
+
+
+```{r, message=FALSE, results='asis', warning=FALSE,  echo=FALSE}
+
+
+
+for (i in 1:3){
+    talk <- responses %>% filter(Type == "Main", order == i)
+    cat('\n')     
+    cat('\n')
+    cat('\n') 
+    cat("#### **", i,". ", talk$Title, "**", "\n", "\n", sep = "") 
+    cat("##### ***", talk$Name, "***", ", *", talk$Affiliation, ", ", talk$Department,"*", "\n", "\n", sep = "")
+    cat(talk$Description)
+    cat('\n')
+    cat("<br>")
+}
+```
+
+
+<br>
+
+
+### Lightning Talks
+
+
+```{r, message=FALSE, results='asis', warning=FALSE,  echo=FALSE}
+
+
+
+for (i in 1:8){
+    talk <- responses %>% filter(Type == "Lignting talk", order == i)
+    cat('\n')     
+    cat('\n')
+    cat('\n') 
+    cat("#### **", i,". ", talk$Title, "**", "\n", "\n", sep = "") 
+    cat("##### ***", talk$Name, "***", ", *", talk$Affiliation, ", ", talk$Department,"*", "\n", "\n", sep = "")
+    cat(talk$Description)
+}
+```
+
+
+<br>
+
+***
+
+### Speaker Bios
+
+
+```{r, message=FALSE, results='asis', warning=FALSE,  echo=FALSE}
+
+
+
+for (i in 1:3){
+    talk <- responses %>% filter(Type == "Main", order == i)
+    cat('\n')     
+    cat('\n')
+    cat('\n') 
+    cat("#### **", talk$Name, "**", "\n", "\n", sep = "") 
+    cat(talk$Bio)
+    cat('\n')
+    cat("<br>")
+}
+
+for (i in 1:8){
+    talk <- responses %>% filter(Type == "Lignting talk", order == i)
+    cat('\n')     
+    cat('\n')
+    cat('\n') 
+    cat("#### **", talk$Name, "**", "\n", "\n", sep = "") 
+    cat(talk$Bio)
+    cat('\n')
+    cat("<br>")
+}
+```
