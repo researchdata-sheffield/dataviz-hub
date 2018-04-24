@@ -16,7 +16,7 @@ We’re also working on developing a community communication framework. We’ve 
 
 We’ll be hosting a **variety of events** including **talks & symposia, workshops, vis-coding clubs and data visualisation hackathons!**. 
 
-You'll be able to find out more when we formally launch the initiative at our inaugural **Data Visualisation Hub forum event**...coming to the Siemens MindSphere Lounge on the **April 25th 2018, 12-2pm**. Register [here](https://www.eventbrite.co.uk/e/data-visualisation-hub-launch-registration-44909949869).
+You'll be able to find out more when we formally launch the initiative at our inaugural **Data Visualisation Hub forum event**...coming to the LT6 in the Arts Tower on the **April 25th 2018, 12-2pm**. Register [here](https://www.eventbrite.co.uk/e/data-visualisation-hub-launch-registration-44909949869).
 
 But just to give an idea, here's a selection of workshops in the pipeline:
 
