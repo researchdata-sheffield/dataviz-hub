@@ -14,7 +14,7 @@ We’re thrilled to invite you to the **first Data Visualisation Hub Forum** eve
 
 The event is scheduled for **lunchtime (12-2pm)**, will begin with **3-4 talks**, followed by a series of **lightning talks** (full schedule to be confirmed soon). This will be followed by a **Q & A panel in which we'll open the floor to questions and discussion** from the audience. Finally, we’ll close with **lunch and an opportunity to network**.
 
-See full schedule [here](../../launch/hub-launch-schedule.html)
+See full schedule [here](../../launch/hub-launch-schedule/)
 
 <br><br>
 
