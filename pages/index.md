@@ -30,7 +30,7 @@ In 2017, ORDA (Online Research Data) was launched, a free platform for all Unive
  
 We’ll be hosting a **variety of events** including **talks & symposia, workshops, vis-coding clubs and data visualisation hackathons!**. 
 
-You'll be able to find out more when we formally launch the initiative on **April 25th 2018, 12-2pm** at our inaugural **Data Visualisation Hub launch event** at the **Siemens MindSphere**. Register [here](https://www.eventbrite.co.uk/e/data-visualisation-hub-launch-registration-44909949869).
+You'll be able to find out more when we formally launch the initiative on **April 25th 2018, 12-2pm** at our inaugural **Data Visualisation Hub launch event** at **LT6 in the Arts Tower**. Register [here](https://www.eventbrite.co.uk/e/data-visualisation-hub-launch-registration-44909949869).
 
 
 <br>
