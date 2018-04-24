@@ -21,14 +21,14 @@ article: http://ogp.me/ns/article#
 <meta property="og:url" content="http://dataviz.shef.ac.uk/tutorials/dash/">
 <meta property="og:description" content="Dash is a user interface library for creating analytical web applications. Those who use Python for data analysis, data exploration, visualization, modelling, instrument control, and reporting will fi">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-04-24T18:02:36+01:00">
+<meta property="article:published_time" content="2018-04-24T21:54:58+01:00">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
 <body class="theme-blue">
 
 <!-- header -->
 <header class="header_tuos"><div class="headcontainer">
-        <div class="logo"><a href="../../"><img src="https://sheffield.ac.uk/branding/webapps/0.7.0/assets/logo.svg" alt="The University of Sheffield." class="respImg"></a></div>
+        <div class="logo"><a href="https://dataviz.shef.ac.uk/"><img src="https://sheffield.ac.uk/branding/webapps/0.7.0/assets/logo.svg" alt="The University of Sheffield." class="respImg"></a></div>
         <div class="page-title alignleft">
             dataviz.shef
         </div>
@@ -75,12 +75,7 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-    <a href="index.md" id="sourcelink">Source</a>
-    </li>
-                
-            </ul>
+<ul class="nav navbar-nav navbar-right"></ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -116,37 +111,49 @@ article: http://ogp.me/ns/article#
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p><a href="https://plot.ly/dash/">Dash</a> is a user interface library for creating analytical web applications. Those who use <a href="https://www.python.org">Python</a> for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.</p>
-<p><a href="https://plot.ly/dash/">Read the full documentation for Dash</a></p>
+<p><a href="https://plot.ly/dash/">Dash</a> is a user interface library for creating analytical web applications. Those who use <a href="https://www.python.org">Python</a> for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for <a href="https://plot.ly/dash/">Dash</a>.</p>
 <hr>
 <p><strong>Contents</strong></p>
 <div class="toc">
 <ul>
-<li><a href="#1-installation">1. Installation</a></li>
-<li><a href="#2-about-this-example">2. About this example</a></li>
-<li><a href="#3-first-step">3. First step</a></li>
-<li><a href="#4-download-and-read-a-csv-file">4. Download and read a CSV file</a></li>
-<li><a href="#5-preview-dataset">5. Preview Dataset</a></li>
-<li><a href="#6-layout">6. Layout</a></li>
-<li><a href="#7-interactivity">7. Interactivity</a></li>
-<li><a href="#8-style">8. Style</a></li>
-<li><a href="#9-running-application">9. Running Application</a></li>
+<li><a href="#1-prerequsites">1. Prerequsites</a></li>
+<li><a href="#2-installation">2. Installation</a></li>
+<li><a href="#3-about-this-example">3. About this example</a></li>
+<li><a href="#4-first-step">4. First step</a></li>
+<li><a href="#5-download-and-read-a-csv-file">5. Download and read a CSV file</a></li>
+<li><a href="#6-preview-dataset">6. Preview Dataset</a></li>
+<li><a href="#7-layout">7. Layout</a></li>
+<li><a href="#8-interactivity">8. Interactivity</a></li>
+<li><a href="#9-style">9. Style</a></li>
+<li><a href="#10-running">10. Running</a></li>
 </ul>
 </div>
-<h3 id="1-installation">1. Installation</h3>
-<p>In order to run Dash app in a Flask server install the following libraries.</p>
-<p class="alert alert-block alert-warning">Make sure you have installed <strong>Python</strong> (https://www.python.org/downloads/) and <strong>pip</strong> (https://pip.pypa.io/en/stable/installing/)</p>
-<pre class="code literal-block"><span></span>pip install <span class="nv">dash</span><span class="o">==</span><span class="m">0</span>.19.0  <span class="c1"># The core dash backend</span>
-pip install dash-renderer<span class="o">==</span><span class="m">0</span>.11.1  <span class="c1"># The dash front-end</span>
-pip install dash-html-components<span class="o">==</span><span class="m">0</span>.8.0  <span class="c1"># HTML components</span>
-pip install dash-core-components<span class="o">==</span><span class="m">0</span>.15.2  <span class="c1"># Supercharged components</span>
-pip install plotly --upgrade  <span class="c1"># Latest Plotly graphing library</span>
-</pre>
-
-
-<h3 id="2-about-this-example">2. About this example</h3>
+<h3 id="1-prerequsites">1. Prerequsites</h3>
+<p>This documentation assumes some prior knowledge of <a href="https://www.python.org/">Python</a>. A minimum of being able to install Python, packages, and be able to execute code should get you a example visualisation.
+If you need assistance with Python, <a href="https://docs.python.org/3/tutorial/index.html">python.org</a> provides documentation and tutorials.</p>
+<p>The code in the snippets below is able to be copied verbatim into a file to create a visualisation. At the end of the document there is a link to download a file we prepared earlier.</p>
+<p>In the interests of demonstrating the functionality, we have not presented best practice, rather focusing on demonstrating Dash.
+For example you might want to consider using a virtual environment to aid managing your third party packages.</p>
+<h3 id="2-installation">2. Installation</h3>
+<p>The following tools should be available:</p>
+<ul>
+<li>Browser capable of HTML 5.</li>
+<li>
+<a href="https://www.python.org/downloads/">Python</a> (2.7 or 3.3 and above)</li>
+</ul>
+<p>In order to run Dash in a Flask server the following libraries will need to be available:</p>
+<ul>
+<li>dash (The core Dash back-end)</li>
+<li>dash-renderer (Dash front-end)</li>
+<li>dash-html-components(HTML components)</li>
+<li>dash-core-components (Supercharged components)</li>
+<li>plotly (Plotly graphing library)</li>
+<li>pandas (Numerical Analysis and Data Manipulation)</li>
+</ul>
+<p>Those have been pre-populated in a <a href="../../dashtutorial/requirements.txt">requirements.txt</a> file, compatible with <a href="https://pip.pypa.io/en/stable/installing/">pip</a>, to prepare a python environment.</p>
+<h3 id="3-about-this-example">3. About this example</h3>
 <p>In this example we are going to build a graph that shows life expectancy in comparison to GDP per capita based in all countries around the World.</p>
-<h3 id="3-first-step">3. First step</h3>
+<h3 id="4-first-step">4. First step</h3>
 <p>Besides Dash, we are using <strong>Pandas</strong> for extract and manipulate data and <strong>Plotly</strong> to render the output into a Graph. In order to use those libraries you first need to import them:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">dash</span>
 <span class="kn">import</span> <span class="nn">dash_core_components</span> <span class="kn">as</span> <span class="nn">dcc</span>
@@ -158,13 +165,13 @@ pip install plotly --upgrade  <span class="c1"># Latest Plotly graphing library<
 </pre>
 
 
-<h3 id="4-download-and-read-a-csv-file">4. Download and read a CSV file</h3>
+<h3 id="5-download-and-read-a-csv-file">5. Download and read a CSV file</h3>
 <p>Use Panda's <code>read_csv</code> function to download and extract your dataset. When you read a CSV, you get a <code>DataFrame</code>, which is made up of rows and columns. You access columns in a DataFrame the same way you access elements of a dictionary.</p>
 <pre class="code literal-block"><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://ndownloader.figsh.com/files/8261349'</span><span class="p">)</span>
 </pre>
 
 
-<h3 id="5-preview-dataset">5. Preview Dataset</h3>
+<h3 id="6-preview-dataset">6. Preview Dataset</h3>
 <p>Function <code>head()</code> gives you a preview of the downloaded dataset.</p>
 <pre class="code literal-block"><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre>
@@ -244,7 +251,7 @@ pip install plotly --upgrade  <span class="c1"># Latest Plotly graphing library<
 </table>
 </div>
 
-<h3 id="6-layout">6. Layout</h3>
+<h3 id="7-layout">7. Layout</h3>
 <p>Dash apps are composed of two parts: <strong>Layout</strong> and <strong>Interactivity</strong>.
 The first part is the "layout" of the app and it describes what the application looks like.</p>
 <p>In this example we are going to create two kinds of filter:</p>
@@ -291,7 +298,7 @@ The first part is the "layout" of the app and it describes what the application 
 </pre>
 
 
-<h3 id="7-interactivity">7. Interactivity</h3>
+<h3 id="8-interactivity">8. Interactivity</h3>
 <p>Dash provides a simple reactive decorator for binding your custom data analysis code to your Dash user interface.<br>
 When an input element changes (e.g. when you select an item in the dropdown or drag the slider), Dash’s decorator provides your Python code with the new value of the input.<br>
 In this example we are calling the <code>update_graph</code> function each time either a country is selected or a life expectancy range is set.</p>
@@ -337,8 +344,8 @@ In this example we are calling the <code>update_graph</code> function each time 
 </pre>
 
 
-<h3 id="8-style">8. Style</h3>
-<p>Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts. Dash apps are built and published in the Web, so the full power of CSS is available. </p>
+<h3 id="9-style">9. Style</h3>
+<p>Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts. Dash apps are built and published in the Web, so the full power of CSS is available.</p>
 <p>Use <code>app.css.append_css</code> in order to set an external CSS file</p>
 <pre class="code literal-block"><span></span><span class="n">app</span><span class="o">.</span><span class="n">css</span><span class="o">.</span><span class="n">append_css</span><span class="p">({</span>
     <span class="s2">"external_url"</span><span class="p">:</span> <span class="s2">"https://codepen.io/chriddyp/pen/bWLwgP.css"</span>
@@ -346,13 +353,15 @@ In this example we are calling the <code>update_graph</code> function each time 
 </pre>
 
 
-<h3 id="9-running-application">9. Running Application</h3>
+<h3 id="10-running">10. Running</h3>
 <p>Dash apps are web applications. Dash uses Flask as the web framework. The underlying Flask app is available at app.server, and for the purpose of running the application you should call <code>run_server</code> function in your python code as you can see below.</p>
 <pre class="code literal-block"><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">app</span><span class="o">.</span><span class="n">run_server</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre>
 
 
+<p>We have prepared the code snippets from above in <a href="../../dashtutorial/dash_example.py">dash_example.py</a>.
+It is strongly recommended you read this file to understand it before executing it.</p>
 <p>If it all works correctly, your app should be running and accessible in your web browser; the default address is <code>http://127.0.0.1:8050/</code>. It should look something like this:</p>
 <iframe src="https://dash-tutorial.herokuapp.com/" style="height: 600px; width: 100%;" frameborder="0"></iframe>
 

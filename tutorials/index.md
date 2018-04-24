@@ -14,9 +14,9 @@ title: Tutorials & links
 
 Dataviz.shef provides tutorials on
 
-- [Visualising data on the web with Python and Dash](http://dataviz.shef.ac.uk/tutorials/dash/)
-- [Linking visualisations in ORDA to data](http://dataviz.shef.ac.uk/orda/link/)
-- [Citing data for which you have created visualisations](http://dataviz.shef.ac.uk/orda/cite/)
+- [Visualising data on the web with Python and Dash](/tutorials/dash/)
+- [Linking visualisations in ORDA to data](/orda/link/)
+- [Citing data for which you have created visualisations](/orda/cite/)
 
 
 ## Web

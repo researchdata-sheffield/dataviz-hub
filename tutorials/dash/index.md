@@ -3,37 +3,46 @@ title: Visualising data on the web with Python and Dash
 slug: dash
 ---
 
-[Dash](https://plot.ly/dash/) is a user interface library for creating analytical web applications. Those who use [Python](https://www.python.org) for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for Dash.
-
-[Read the full documentation for Dash](https://plot.ly/dash/)
+[Dash](https://plot.ly/dash/) is a user interface library for creating analytical web applications. Those who use [Python](https://www.python.org) for data analysis, data exploration, visualization, modelling, instrument control, and reporting will find immediate use for [Dash](https://plot.ly/dash/).
 
 ------------------------------------------------------------------------------
 
 **Contents**
 
 [TOC]
+## 1. Prerequsites
+This documentation assumes some prior knowledge of [Python](https://www.python.org/). A minimum of being able to install Python, packages, and be able to execute code should get you a example visualisation.
+If you need assistance with Python, [python.org](https://docs.python.org/3/tutorial/index.html) provides documentation and tutorials.
 
-## 1. Installation
+The code in the snippets below is able to be copied verbatim into a file to create a visualisation. At the end of the document there is a link to download a file we prepared earlier.
 
-In order to run Dash app in a Flask server install the following libraries.
-
-Make sure you have installed **Python** (https://www.python.org/downloads/) and **pip** (https://pip.pypa.io/en/stable/installing/)
-{: .alert .alert-block .alert-warning }
+In the interests of demonstrating the functionality, we have not presented best practice, rather focusing on demonstrating Dash.
+For example you might want to consider using a virtual environment to aid managing your third party packages.
 
 
-```sh
-pip install dash==0.19.0  # The core dash backend
-pip install dash-renderer==0.11.1  # The dash front-end
-pip install dash-html-components==0.8.0  # HTML components
-pip install dash-core-components==0.15.2  # Supercharged components
-pip install plotly --upgrade  # Latest Plotly graphing library
-```
+## 2. Installation
 
-## 2. About this example
+The following tools should be available:
+
+-   Browser capable of HTML 5.
+-   [Python](https://www.python.org/downloads/) (2.7 or 3.3 and above)
+
+In order to run Dash in a Flask server the following libraries will need to be available:
+
+ - dash (The core Dash back-end)
+ - dash-renderer (Dash front-end)
+ - dash-html-components(HTML components)
+ - dash-core-components (Supercharged components)
+ - plotly (Plotly graphing library)
+ - pandas (Numerical Analysis and Data Manipulation)
+
+Those have been pre-populated in a [requirements.txt](/dashtutorial/requirements.txt) file, compatible with [pip](https://pip.pypa.io/en/stable/installing/), to prepare a python environment.
+
+## 3. About this example
 
 In this example we are going to build a graph that shows life expectancy in comparison to GDP per capita based in all countries around the World.
 
-## 3. First step
+## 4. First step
 
 Besides Dash, we are using __Pandas__ for extract and manipulate data and __Plotly__ to render the output into a Graph. In order to use those libraries you first need to import them:
 
@@ -48,7 +57,7 @@ import plotly.graph_objs as go
 import pandas as pd
 ```
 
-## 4. Download and read a CSV file
+## 5. Download and read a CSV file
 
 Use Panda's `read_csv` function to download and extract your dataset. When you read a CSV, you get a `DataFrame`, which is made up of rows and columns. You access columns in a DataFrame the same way you access elements of a dictionary.
 
@@ -57,7 +66,7 @@ Use Panda's `read_csv` function to download and extract your dataset. When you r
 df = pd.read_csv('https://ndownloader.figsh.com/files/8261349')
 ```
 
-## 5. Preview Dataset
+## 6. Preview Dataset
 
 Function `head()` gives you a preview of the downloaded dataset.
 
@@ -143,7 +152,7 @@ df.head()
 
 
 
-## 6. Layout
+## 7. Layout
 Dash apps are composed of two parts: __Layout__ and __Interactivity__.
 The first part is the "layout" of the app and it describes what the application looks like.
 
@@ -194,7 +203,7 @@ app.layout = html.Div([
 ])
 ```
 
-## 7. Interactivity
+## 8. Interactivity
 
 Dash provides a simple reactive decorator for binding your custom data analysis code to your Dash user interface.  
 When an input element changes (e.g. when you select an item in the dropdown or drag the slider), Dash’s decorator provides your Python code with the new value of the input.  
@@ -209,7 +218,7 @@ In this example we are calling the `update_graph` function each time either a co
         dash.dependencies.Input('country', 'value')
     ])
 def update_graph(expectancy, country):
-    
+
     filtered_df = df.loc[df["life expectancy"] > expectancy]
 
     if (country != '' and country is not None):
@@ -243,9 +252,9 @@ def update_graph(expectancy, country):
     }
 ```
 
-## 8. Style
+## 9. Style
 
-Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts. Dash apps are built and published in the Web, so the full power of CSS is available. 
+Every aesthetic element of the app is customisable: The sizing, the positioning, the colors, the fonts. Dash apps are built and published in the Web, so the full power of CSS is available.
 
 Use `app.css.append_css` in order to set an external CSS file
 
@@ -256,7 +265,7 @@ app.css.append_css({
 })
 ```
 
-## 9. Running Application
+## 10. Running
 
 Dash apps are web applications. Dash uses Flask as the web framework. The underlying Flask app is available at app.server, and for the purpose of running the application you should call `run_server` function in your python code as you can see below.
 
@@ -264,6 +273,9 @@ Dash apps are web applications. Dash uses Flask as the web framework. The underl
 if __name__ == '__main__':
     app.run_server(debug=True)
 ```
+
+We have prepared the code snippets from above in [dash_example.py](/dashtutorial/dash_example.py).
+It is strongly recommended you read this file to understand it before executing it.
 
 If it all works correctly, your app should be running and accessible in your web browser; the default address is `http://127.0.0.1:8050/`. It should look something like this:
 
