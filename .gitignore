@@ -6,3 +6,5 @@ resources.html
 *test.*
 *.Rproj
 .Rhistory
+.httr-oauth
+rmd/*.html
