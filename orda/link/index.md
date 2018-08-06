@@ -6,7 +6,7 @@ Web-based visualisations can be included in the [visualisation showcase on ORDA]
 
 ## Prerequisites 
 
-You will first need to [prepare a small metadata file, `visualisation.yaml`, describing your visualisation][yaml].
+You will first need to prepare a small metadata visualisation.yaml file describing your visualisation. Create this via a [web form][webyaml] or [manually][yaml].
 
 ## Where data has been uploaded and published in ORDA 
 
@@ -30,4 +30,5 @@ You will first need to [prepare a small metadata file, `visualisation.yaml`, des
 7. If the data files are not already available from a repository and issued with a DOI, you should deposit them in ORDA, by upload to the item record. This may be done after the record containing only the [visualisation.yaml][yaml] and image files has been published.
 
 [showcase]: https://orda.shef.ac.uk/visualisations/
+[webyaml]: http://vis-yaml.shef.ac.uk/
 [yaml]: ../visualisation-yaml/
