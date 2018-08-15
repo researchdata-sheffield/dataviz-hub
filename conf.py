@@ -136,10 +136,10 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/about/", "About"),
         ("/community/", "Community"),
+        ("/tutorials/", "Tutorials & links"),
         (
             (
                 # ("/resource/", "Link to local resource"),
-                ("/tutorials/", "Tutorials & links"),
                 ("https://oxshef.github.io/oxshef/", "OxShef: DataViz 🔗"),
             ),
             "Resources",
