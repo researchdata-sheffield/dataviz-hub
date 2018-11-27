@@ -282,7 +282,7 @@
                 "sha256:9c0247b63ed33f21c5c6241f09fc7dae84416e6d1a591b6d262b88b49db98e82",
                 "sha256:7fafcd1ae638bd70bca3621982a69ccdc47ea19b234694073b617f59e79403ea"
             ],
-            "version": "==5.2.0"
+            "version": "==5.7.2"
         },
         "olefile": {
             "hashes": [
