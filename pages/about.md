@@ -18,7 +18,7 @@ title: About
 **dataviz.shef** is a joint initiative between:
 
 - [The University Library][Library]
-- [Corporate Information and Computing Services (CICS)][CICS]
+- [IT Services][ITS]
 - [Research Software Engineering (RSE)][RSE]
 
 <br>
@@ -28,6 +28,6 @@ title: About
 We also share ideas and resources with the [**University of Oxford Interactive Data Network**](https://idn.it.ox.ac.uk/) under the [OxShef][OxShef] initiative.
 
 [Library]: https://sheffield.ac.uk/library
-[CICS]: https://sheffield.ac.uk/cics
+[ITS]: https://www.sheffield.ac.uk/it-services
 [RSE]: http://rse.shef.ac.uk/
 [OxShef]: http://oxshef.github.io/oxshef/
